@@ -1,0 +1,227 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5; /* Light Gray Background */
+    color: #333333; /* Dark Gray Text */
+}
+
+/* Navbar Styles */
+.navbar {
+    background: linear-gradient(135deg, #3f51b5, #00bcd4); /* Indigo to Cyan Gradient */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for Depth */
+    padding: 10px 20px;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar-brand {
+    color: #ffffff; /* White Brand Text */
+    font-weight: bold;
+    font-size: 1.8rem; /* Bigger Font for Branding */
+    letter-spacing: 1px; /* Slight Letter Spacing */
+}
+
+.nav-link {
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ff4081; /* Pink on Hover */
+    text-decoration: underline;
+}
+
+/* Search Form */
+.form-control {
+    border-radius: 50px;
+    border: 1px solid #ffffff;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    padding-left: 15px;
+    transition: all 0.3s ease;
+}
+
+.form-control::placeholder {
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+.btn-outline-light {
+    border: none;
+    color: #ffffff;
+    background: transparent;
+    padding: 8px 16px;
+    border-radius: 50%;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-outline-light:hover {
+    color: #ff4081; /* Pink on Hover */
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Hero Section */
+#hero {
+    height: 60vh;
+    background: linear-gradient(135deg, #ff4081, #3f51b5); /* Pink to Indigo Gradient */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-top: 70px; /* Adjust for the fixed navbar */
+}
+
+#hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.carousel-inner img {
+    height: 60vh;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Card Section */
+.card {
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #ffffff, #e3f2fd); /* White to Light Blue */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); /* Soft Shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Hover Lift Effect */
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2); /* Stronger Shadow on Hover */
+}
+
+.card-title {
+    color: #3f51b5; /* Indigo Card Titles */
+    font-weight: bold;
+}
+
+.card-text {
+    color: #555555; /* Dark Gray Card Text */
+}
+
+/* Section Styles */
+section {
+    padding: 60px 0;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 60px;
+}
+
+section h2 {
+    color: #3f51b5; /* Indigo Section Headings */
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+section p {
+    color: #666666;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(135deg, #3f51b5, #ff4081); /* Indigo to Pink Gradient */
+    padding: 20px 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #ff4081; /* Pink Buttons */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #3f51b5; /* Indigo on Hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Scroll Animations */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .nav-link {
+        padding: 5px 10px;
+    }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px; /* Adjust scrollbar width */
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1); /* Light background for track */
+    border-radius: 10px; /* Rounded edges for track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #ff8a00, #e52e71); /* Gradient on thumb */
+    border-radius: 10px; /* Rounded corners for thumb */
+    border: 2px solid rgba(64, 180, 238, 0.3); /* Slight border to separate thumb from track */
+    transition: background 0.3s ease; /* Smooth hover transition */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #ff8a00, #ff0080); /* More vivid gradient on hover */
+}
+
+/* Firefox Compatibility */
+html {
+    scrollbar-width: thin; /* Thin scrollbar for modern feel */
+    scrollbar-color: linear-gradient(45deg, #ff8a00, #e52e71) rgba(0, 0, 0, 0.1); /* Thumb and track colors */
+}
+
+/* Edge and IE (New versions) */
+.scrollbar-custom {
+    scrollbar-color: linear-gradient(45deg, #ff8a00, #e52e71) rgba(0, 0, 0, 0.1); /* Gradient on thumb */
+    scrollbar-width: thin;
+}
